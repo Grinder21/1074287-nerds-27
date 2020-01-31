@@ -53,7 +53,7 @@
      <li><img src="img/svg-nerds/checkbox-off.svg" width="15" height="15" alt="Выбрать элемент"><label> Галерея</label></li>
      <li><img src="img/svg-nerds/checkbox-off.svg" width="15" height="15" alt="Выбрать элемент"><label> Корзина</label></li>   
     </ul>
-    <input type="button" value=" Показать " id="show-grid"> 
+    <button type="button" id="show-grid"> Показать </button>
     </div>
     <section class="choice-selection">
       <h2>Шаблоны магазина</h2>
@@ -71,10 +71,10 @@
      <img src="img/img-kvast.jpg" alt="Шаблон №6">
     </section>
     <div class="page-transition">
-     <input type="button" value="1" id="page-transition-one">
-     <input type="button" value="2" id="page-transition-two">
-     <input type="button" value="3" id="page-transition-three">
-     <input type="button" value="Следующая" id="page-transition-next">
+     <button type="button" id="page-transition-one">1</button>
+     <button type="button" id="page-transition-two">2</button>
+     <button type="button" id="page-transition-three">3</button>
+     <button type="button" id="page-transition-next">Следующая</button>
     </div> 
     <section class="main-map">
       <h2>Карты</h2>
@@ -86,6 +86,21 @@
       <p>тел. +7 (812) 275-75-75</p>
       </article>
       <img src="img/map-marker.png" width="231" height="190" alt="Отметка положения на карте">
+    </section>
+    <section class="message-form">
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+    <p>
+    <label for="name-user"><b>Ваше имя:</b></label><br>
+    <input id="name-user" type="text" name="name" value="" placeholder="Имя Фамилия">
+    </p>
+    <p>
+    <label for="user-email"><b>Ваш e-mail</b></label><br>
+    <input id="user-email" type="email" name="login" placeholder="email@example.com">
+    </p><br>
+    <textarea name="comment" placeholder="В свободной форме"></textarea><br>
+    <button type="submit">Отправить</button>
+    </form> 
     </section>
     </main>
     <footer>
