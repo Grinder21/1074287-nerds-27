@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 14px;
+	font-weight: 24px;
 }
 
 a {
@@ -28,6 +29,14 @@ a {
 }
 
 /* Начало шапки сайта */
+.main-logo:hover {
+	opacity: 0.8;
+}
+
+.main-logo:active {
+	opacity: 0.3;
+}
+
 .main-header {
 	background-color: #eee;
 }
@@ -47,6 +56,9 @@ a {
 	color: #bbb;
 }
 
+.addition {
+	background-color: #eee;
+}
 
 
 /* Корзина */
@@ -97,7 +109,42 @@ a {
 	background-color: #e6a823;
 }
 /* Конец feature-item */
-/* Главный контент сюда */
+/* Начало "Мы - маленькая, но гордая дизайн-студия" */
+
+.orders {
+	list-style-type: none;
+}
+
+.main-table .table-item {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 45px;
+}
+
+.main-table .table-item-1 {
+	vertical-align: middle;
+	text-align: center;
+}
+/* Конец "Мы - маленькая, но гордая дизайн-студия" */
+
+/* Начало СПОНСОРОВ */
+.main-brand {
+	list-style-type: none;
+}
+
+.main-brand .main-brand-item {
+	opacity: 0.2;
+}
+
+.main-brand .main-brand-item:hover {
+	opacity: 1;
+}
+
+.main-brand .main-brand-item:active {
+	opacity: 0.1;
+}
+
+/* Конец СПОНСОРОВ */
 
 /* Начало подвала сайта */
 .social-networks .social-networks-item {
@@ -132,6 +179,16 @@ a {
 
 .littering-3 {
 	font-size: 36px;
+}
+
+.littering-4 {
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.littering-5 {
+	text-transform: uppercase;
+	font-size: 16px;
 }
 
 /* Конец главных надписей на сайте */
@@ -169,3 +226,48 @@ a {
 	list-style-type: none;
 }
 /* Конец панели "СТОИМОСТЬ, СОРТИРОВАТЬ" */
+
+/* НАЧАЛО КАТАЛОГА КАРТИНКИ */
+
+.choice-selection-item {
+	opacity: 0.12;
+}
+
+.choice-selection-item:hover {
+	opacity: 1;
+}
+
+/* КОНЕЦ КАТАЛОГА КАРТИНКИ */
+
+/* НАЧАЛО ПЕРЕКЛЮЧАТЕЛЕЙ КАТАЛОГА КАРТИНКИ */
+
+.pagination {
+	list-style-type: none;
+}
+
+.pagination .pagination-item {
+	font: inherit;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+	vertical-align: middle;
+	background-color: #eeeeee;
+	border: none;
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+}
+.pagination :last-child {
+	width: 260px;
+	height: 50px;
+}
+
+.pagination .pagination-item:hover {
+	background-color: #dfdfdf;
+}
+
+.pagination .pagination-item:active {
+	background-color: #d5d5d5;
+}
+
+/* КОНЕЦ ПЕРЕКЛЮЧАТЕЛЕЙ КАТАЛОГА КАРТИНКИ */
