@@ -70,18 +70,26 @@ a {
 }
 
 .site-navigation {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 50px;
 	list-style-type: none;
 	font-size: 16px;
 	font-weight: 500;
 	color: 000;
 	min-height: 70px;
-	width: 440px;
 	margin: 0;
 	padding: 0;
 }
 
+.item-site-navigation {
+	margin-right: 45px;
+}
+
 .user-navigation {
+	display: flex;
+	align-items: center;
 	min-height: 70px;
 	margin: 0;
 	padding: 0;
@@ -98,15 +106,19 @@ a {
 }
 
 .addition {
+	display: flex;
 	width: 1160px;
 	height: 413px;
-  	margin: 0 auto;
+	margin: 0 auto;
 }
 
 .addition-1 {
-	display: inline-block;
 	width: 381px;
 	height: 287px;
+}
+
+.addition-2 {
+
 }
 
 
@@ -250,6 +262,26 @@ a {
 	background-color: #d7363b;
 }
 
+.page-footer {
+	display: flex;
+	height: 220px;
+}
+
+.social-networks {
+	display: flex;
+	margin-left: 320px;
+	margin-right: 120px;
+	align-items: center;
+}
+
+.social-networks-item {
+	margin-right: 20px;
+}
+
+.discount {
+	padding-top: 80px;
+}
+
 /* Конец подвала сайта */
 
 /* Главные надписи на сайте */
@@ -278,6 +310,14 @@ a {
 /* Конец главных надписей на сайте */
 
 /* Страница каталога, боковая панель "СЕТКА, ОСОБЕННОСТИ" */
+.visually-hidden {
+	height: 160px;
+	background-color: #eee;
+	text-align: center;
+	font-size: 55px;
+	padding-top: 20px;
+}
+
 .choice-grid .choice-grid-item {
 	list-style-type: none;
 }
@@ -297,6 +337,23 @@ a {
 
 .show-grid:active {
 	background-color: #d5d5d5;
+}
+
+.grid-features {
+	display: flex;
+	flex-direction: column;
+}
+
+.choice-grid {
+	display: flex;
+	flex-direction: column;
+	margin-left: -40px;
+}
+
+.choice-features {
+	display: flex;
+	flex-direction: column;
+	margin-left: -40px;
 }
 
 /* Конец страницы каталога, боковая панель "СЕТКА, ОСОБЕННОСТИ" */
