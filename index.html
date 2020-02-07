@@ -7,31 +7,37 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
   	<header class="main-header">
-  	 <nav class="main-navigation">
+  	 <nav class="main-navigation container">
+      <div class="main-navigation-wrapper">
+      <div class="container">
   	  <a href="#">
         <img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" class="main-logo" alt="Логотип дизайн-студии">
       </a>
-  	 	<ul class="site-navigation">
-  	 	<li class="item-site-navigation"><a href="#">Студия</a></li>
-  	 	<li class="item-site-navigation"><a href="#">Клиенты</a></li>
-  	 	<li class="item-site-navigation"><a href="catalog.html">Магазин</a></li>
-  	 	<li class="item-site-navigation"><a href="#">Контакты</a></li>
-  	 	</ul>
-  	 	<ul class="user-navigation">
-  	 	 <li class="main-basket"><img src="img/svg-nerds/cart-icon.svg" width="15" height="15" alt="Картинка корзины"><a href="#"> Корзина</a></li>
-  	 	</ul>
-  	 </nav>
+      <ul class="site-navigation">
+      <li class="item-site-navigation"><a href="#">Студия</a></li>
+      <li class="item-site-navigation"><a href="#">Клиенты</a></li>
+      <li class="item-site-navigation"><a href="catalog.html">Магазин</a></li>
+      <li class="item-site-navigation"><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+       <li class="main-basket"><img src="img/svg-nerds/cart-icon.svg" width="15" height="15" alt="Картинка корзины"><a href="#"> Корзина</a></li>
+      </ul>  
+      </div>
+      </div>
+  	</nav>
+    <div class="addition">
+    <div class="addition-1">
+    <p class="littering-1"><b>Долго, дорого,<br>скрупулёзно.</b></p>
+    Математически выверенный дизайн<br>
+    для вашего сайта или мобильного приложения.
+    <button type="button" class="button">Узнать больше</button>
+    </div>
+    <img src="img/slide1.png" width="698" height="413" alt="Картинка с телефонами">
+    </div>
   	</header>
   	<main class="container">
-  	<div class="addition">
-  	<p class="littering-1"><b>Долго, дорого,<br>скрупулёзно.</b></p>
-  	Математически выверенный дизайн<br>
-  	для вашего сайта или мобильного приложения.	
-  	</div>
-  	<button type="button" class="button">Узнать больше</button>
-  	<img src="img/slide1.png" width="698" height="413" alt="Картинка с телефонами">
   	<section class="features">
   		<ul class="feature-list">
   		 <li class="feature-item">
@@ -60,17 +66,20 @@
   		 </li>			
   		</ul>
   	</section>
+    <img src="img/divide.png" width="1160" height="2" alt="Горизонтальная линия">
   	<section class="main-contacts">
-  	  <p class="littering-2"><b>Мы - маленькая, но гордая<br>
-  	  дизайн-студия из Краснодара.</b></p>
-  	  Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+      <div class="main-excellence">
+      <p class="littering-2"><b>Мы - маленькая, но гордая<br>
+      дизайн-студия из Краснодара.</b></p>
+      Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
       превыше креатива. Работаем не покладая рук, как роботы.
       <p class="littering-4"><b>Выполняем заказы на разработку:</b></p>
       <ul class="orders">
-      	<li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка"> Веб-сайтов любой сложности</li>
-      	<li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка"> Мобильных приложений для iOS и Android</li>
-      	<li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка"> Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
+        <li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка"> Веб-сайтов любой сложности</li>
+        <li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка"> Мобильных приложений для iOS и Android</li>
+        <li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка"> Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>  
+      </div>
       <div class="statistics">
       <img src="img/nerds-illustration.png" width="360" height="208" alt="Картинка Нёрдс">
       <p class="littering-5"><b>C 2004 любим точность во всём:</b></p>
@@ -89,13 +98,12 @@
       </div>
   	</section>
   	<img src="img/divide.png" width="1160" height="2" alt="Горизонтальная линия">
-
-  	<ul class="main-brand">
+    <ul class="main-brand">
     <li class="main-brand-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1-copy.png" width="199" height="68" alt="Картинка HTML Academy"></a></li>
     <li class="main-brand-item"><a href="#"><img src="img/logo-2-copy.png" width="209" height="90" alt="Картинка Барбершоп Бородинский"></a></li>
     <li class="main-brand-item"><a href="#"><img src="img/logo-3-copy.png" width="185" height="52" alt="Картинка ПНК"></a></li>
     <li class="main-brand-item"><a href="#"><img src="img/logo-4-copy.png" width="173" height="84" alt="Картинка MISHKA"></a></li>
-  	</ul>
+    </ul>  
   	<img src="img/divide.png" width="1160" height="2" alt="Горизонтальная линия">
   	<section class="main-map">
   	 <h2>Карты</h2>
@@ -112,7 +120,7 @@
   	</section>
   	<section class="message-form">
   	<h2>Напишите нам</h2>
-  	<form action="https://echo.htmlacademy.ru" method="post">
+  	<form class="main-form" action="https://echo.htmlacademy.ru" method="post">
   	<p>
   	<label for="name-user"><b>Ваше имя:</b></label><br>
   	<input id="name-user" type="text" name="name" value="" placeholder="Имя Фамилия">

@@ -4,6 +4,7 @@ body {
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 24px;
+	min-width: 1200px;
 }
 
 a {
@@ -39,14 +40,54 @@ a {
 
 .main-header {
 	background-color: #eee;
+	min-height: 125px;
+}
+
+.main-navigation {
+	min-height: 125px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-navigation-wrapper {
+	width: 100%;
+	min-height: 70px;
+	background-color: #000;
+	background-color: transparent;
+	margin-top: 50px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: space-between;
 }
 
 .site-navigation {
+	display: inline-block;
 	list-style-type: none;
 	font-size: 16px;
 	font-weight: 500;
 	color: 000;
+	min-height: 70px;
+	width: 440px;
+	margin: 0;
+	padding: 0;
 }
+
+.user-navigation {
+	min-height: 70px;
+	margin: 0;
+	padding: 0;
+	width: 100px;
+}
+
 
 .site-navigation .item-site-navigation a:hover {
 	color: #ff535d;
@@ -57,7 +98,15 @@ a {
 }
 
 .addition {
-	background-color: #eee;
+	width: 1160px;
+	height: 413px;
+  	margin: 0 auto;
+}
+
+.addition-1 {
+	display: inline-block;
+	width: 381px;
+	height: 287px;
 }
 
 
@@ -76,13 +125,27 @@ a {
 	color: #bbb;
 }
 
-/* Сюда нужен логотип сайта hover, active */
 
 /* Конец шапки сайта */
 
 /* Начало feature-item */
+.features {
+
+}
+
 .feature-list {
 	list-style-type: none;
+	min-height: 350px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80px;
+}
+
+.feature-item {
+	min-height: 350px;
+	width: 300px;
 }
 
 .feature-button-two {
@@ -125,11 +188,32 @@ a {
 	vertical-align: middle;
 	text-align: center;
 }
+
+.main-contacts {
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.excellence {
+	min-height: 380px;
+	width: 660px;
+}
+
+.statistics {
+	min-height: 420px;
+	width: 360px;
+}
 /* Конец "Мы - маленькая, но гордая дизайн-студия" */
 
 /* Начало СПОНСОРОВ */
 .main-brand {
 	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 30px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .main-brand .main-brand-item {
@@ -271,3 +355,8 @@ a {
 }
 
 /* КОНЕЦ ПЕРЕКЛЮЧАТЕЛЕЙ КАТАЛОГА КАРТИНКИ */
+
+/* ФОРМЫ  */
+.main-form {
+	display: none;
+}

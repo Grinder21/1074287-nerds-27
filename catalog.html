@@ -9,26 +9,39 @@
   </head>
   <body>
   	<header class="main-header">
-  	 <nav class="main-navigation">
-       <a href="index.html">
+     <nav class="main-navigation container">
+      <div class="main-navigation-wrapper">
+      <div class="container">
+      <a href="index.html">
         <img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" class="main-logo" alt="Логотип дизайн-студии">
-       </a>
-  	 	<ul class="site-navigation">
-  	 	 <li class="item-site-navigation"><a href="#">Студия</a></li>
-  	 	 <li class="item-site-navigation"><a href="#">Клиенты</a></li>
-  	 	 <li class="item-site-navigation"><a href="#">Магазин</a></li>
-  	 	 <li class="item-site-navigation"><a href="#">Контакты</a></li>				
-  	 	</ul>
-  	 	<ul class="user-navigation">
-  	 	 <li class="main-basket"><img src="img/svg-nerds/cart-icon.svg" width="15" height="15" alt="Картинка корзины"><a href="#"> Корзина</a></li>	
-  	 	</ul>
-  	 </nav>
-  	</header>
+      </a>
+      <ul class="site-navigation">
+      <li class="item-site-navigation"><a href="#">Студия</a></li>
+      <li class="item-site-navigation"><a href="#">Клиенты</a></li>
+      <li class="item-site-navigation"><a href="catalog.html">Магазин</a></li>
+      <li class="item-site-navigation"><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+       <li class="main-basket"><img src="img/svg-nerds/cart-icon.svg" width="15" height="15" alt="Картинка корзины"><a href="#"> Корзина</a></li>
+      </ul>  
+      </div>
+      </div>
+    </nav>
+    </header>
     <main class="container">
       <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
     <ul class="main-setting">
       <li class="main-setting-item"><b>CТОИМОСТЬ:</b></li>
       <li class="main-setting-item"><b>CОРТИРОВАТЬ:</b>
+        <div class="range-slider">
+        <input type="number" value="0" name="min">
+        <input type="number" value="0" name="max">
+  
+        <div class="range-slider-track">
+        <div class="range-slider-pin range-slider-pin-min"></div>
+        <div class="range-slider-pin range-slider-pin-max"></div>
+        </div>
+        </div>
        <ul class="setting">
        <li class="setting-item"><a href="#">ПО ЦЕНЕ</a></li>
        <li class="setting-item"><a href="#">ПО ТИПУ</a></li>
@@ -93,7 +106,7 @@
     </section>
     <section class="message-form">
     <h2>Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
     <label for="name-user"><b>Ваше имя:</b></label><br>
     <input id="name-user" type="text" name="name" value="" placeholder="Имя Фамилия">
