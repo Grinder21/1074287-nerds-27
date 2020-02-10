@@ -30,26 +30,28 @@
     <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
     </header>
     <main class="container">
-    <ul class="main-setting">
+      <ul class="sort">
+       <ul class="setting">
+       <li class="setting-item"><b>CОРТИРОВАТЬ:</b></li>
+       <li class="setting-item"><a href="#"> ПО ЦЕНЕ</a></li>
+       <li class="setting-item"><a href="#"> ПО ТИПУ</a></li>
+       <li class="setting-item"><a href="#"> ПО НАЗВАНИЮ</a></li>  
+       <li class="setting-item"><img src="img/svg-nerds/icon-down-dir.svg" width="11" height="11" alt="Стрелочка вверх"></li>
+       <li class="setting-item"><img src="img/svg-nerds/icon-up-dir.svg" width="11" height="11" alt="Стрелочка вниз"></li>    
+       </ul>
+    </ul>
+      <ul class="main-setting">
       <li class="main-setting-item"><b>CТОИМОСТЬ:</b></li>
-      <li class="main-setting-item"><b>CОРТИРОВАТЬ:</b>
+      <li class="main-setting-item">
         <div class="range-slider">
         <input type="number" value="0" name="min">
         <input type="number" value="0" name="max">
-  
         <div class="range-slider-track">
         <div class="range-slider-pin range-slider-pin-min"></div>
         <div class="range-slider-pin range-slider-pin-max"></div>
         </div>
-        </div>
-       <ul class="setting">
-       <li class="setting-item"><a href="#">ПО ЦЕНЕ</a></li>
-       <li class="setting-item"><a href="#">ПО ТИПУ</a></li>
-       <li class="setting-item"><a href="#">ПО НАЗВАНИЮ</a></li>  
-       <li class="setting-item"><img src="img/svg-nerds/icon-down-dir.svg" width="11" height="11" alt="Стрелочка вверх"></li>
-       <li class="setting-item"><img src="img/svg-nerds/icon-up-dir.svg" width="11" height="11" alt="Стрелочка вниз"></li>    
-       </ul>
-      </li>
+      </div>
+    </li>
     </ul>
     <div class="grid-features">
     <div class="main-choice-grid">
@@ -75,27 +77,30 @@
     </div>
     <section class="choice-selection">
       <h2>Шаблоны магазина</h2>
-     <img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта черная" class="choice-selection-item">
-     <img src="img/img-sedona.jpg" alt="Шаблон №1" width="360" height="576">
-     <img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта" class="choice-selection-item">
-     <img src="img/img-pink.jpg" alt="Шаблон №2">
-     <img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта" class="choice-selection-item">
-     <img src="img/img-barbershop.jpg" alt="Шаблон №3">
-     <img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта" class="choice-selection-item">
-     <img src="img/img-mishka.jpg" alt="Шаблон №4">
-     <img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта" class="choice-selection-item">
-     <img src="img/img-aplus.jpg" alt="Шаблон №5">
-     <img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта" class="choice-selection-item">
-     <img src="img/img-kvast.jpg" alt="Шаблон №6">
+      <ul class="choice-selection-main">
+        <li class="chouce-1"><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта черная" class="choice-selection-item">
+        <img src="img/img-sedona.jpg" alt="Шаблон №1" width="360" height="576"></li>
+        <li class="chouce-1"><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта" class="choice-selection-item">
+     <img src="img/img-pink.jpg" alt="Шаблон №2"></li>
+        <li class="chouce-1"><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта" class="choice-selection-item">
+     <img src="img/img-barbershop.jpg" alt="Шаблон №3"></li>
+        <li class="chouce-1"><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта" class="choice-selection-item">
+     <img src="img/img-mishka.jpg" alt="Шаблон №4"></li>
+        <li class="chouce-1"><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта" class="choice-selection-item">
+     <img src="img/img-aplus.jpg" alt="Шаблон №5"></li>
+        <li class="chouce-1"><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="Верхняя панель сайта" class="choice-selection-item">
+     <img src="img/img-kvast.jpg" alt="Шаблон №6"></li>
+      </ul>
     </section>
+    <div class="main-pagination">
     <ul class="pagination">
     <li class="pagination-item"><a href="#">1</a></li>
     <li class="pagination-item"><a href="#">2</a></li>
     <li class="pagination-item"><a href="#">3</a></li>
     <li class="pagination-item"><a href="#">Следующая</a></li>
     </ul>
-    <section class="main-map">
-      <h2>Карты</h2>
+    </div>
+    <div class="main-map">
       <!-- Сюда нужен код карты !-->
       <img src="img/coord-map.jpg" width="1000" height="400" alt="Изображение на карте">
       <article class="map-contact">
@@ -105,10 +110,10 @@
       <p>тел. +7 (812) 275-75-75</p>
       </article>
       <img src="img/map-marker.png" width="231" height="190" alt="Отметка положения на карте">
-    </section>
-    <section class="message-form">
-    <h2>Напишите нам</h2>
+    </div>
+    <div class="message-form">
     <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+    <h2>Напишите нам</h2>
     <p>
     <label for="name-user"><b>Ваше имя:</b></label><br>
     <input id="name-user" type="text" name="name" value="" placeholder="Имя Фамилия">
@@ -120,7 +125,7 @@
     <textarea name="comment" placeholder="В свободной форме"></textarea><br>
     <button type="submit" class="button">Отправить</button>
     </form> 
-    </section>
+    </div>
     </main>
     <footer class="page-footer">
      <ul class="social-networks">

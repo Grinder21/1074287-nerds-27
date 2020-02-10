@@ -242,6 +242,17 @@ a {
 
 /* Конец СПОНСОРОВ */
 
+/* КАРТЫ */
+.map-contact {
+	background-color:#FFE4E1;
+	width: 250px;
+	height: 250px;
+	text-align: center;
+	line-height: height;
+
+
+}
+
 /* Начало подвала сайта */
 .social-networks .social-networks-item {
 	list-style-type: none;
@@ -361,14 +372,12 @@ a {
 /* Начало панели "СТОИМОСТЬ, СОРТИРОВАТЬ" */
 .main-setting .main-setting-item {
 	list-style-type: none;
+	width: 400px;
 }
 
 .setting .setting-item {
 	list-style-type: none;
 }
-/* Конец панели "СТОИМОСТЬ, СОРТИРОВАТЬ" */
-
-/* НАЧАЛО КАТАЛОГА КАРТИНКИ */
 
 .choice-selection-item {
 	opacity: 0.12;
@@ -378,12 +387,44 @@ a {
 	opacity: 1;
 }
 
+.main-setting {
+	display: flex;
+	flex-direction: column;
+	margin-left: -40px;
+}
+
+.sort {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+.setting-item {
+	display: flex;
+	display: inline-block;
+	list-style-type: none;
+}
+/* Конец панели "СТОИМОСТЬ, СОРТИРОВАТЬ" */
+
+/* НАЧАЛО КАТАЛОГА КАРТИНКИ */
+.choice-selection-main {
+	display: flex;
+	max-width: 1160px;
+	list-style-type: none;
+}
+
+.chouce-1 {
+	
+}
+
+
 /* КОНЕЦ КАТАЛОГА КАРТИНКИ */
 
 /* НАЧАЛО ПЕРЕКЛЮЧАТЕЛЕЙ КАТАЛОГА КАРТИНКИ */
 
 .pagination {
+	display: flex;
 	list-style-type: none;
+	justify-content: center;
 }
 
 .pagination .pagination-item {
