@@ -53,8 +53,6 @@ a {
 .main-navigation-wrapper {
 	width: 100%;
 	min-height: 70px;
-	background-color: #000;
-	background-color: transparent;
 	margin-top: 50px;
 }
 
@@ -329,12 +327,18 @@ a {
 	padding-top: 20px;
 }
 
-.choice-grid .choice-grid-item {
+.choice-grid {
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-.choice-features .choice-features-item {
+.choice-features{
+	display: flex;
+	flex-direction: column;
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .show-grid {
@@ -358,29 +362,24 @@ a {
 .choice-grid {
 	display: flex;
 	flex-direction: column;
-	margin-left: -40px;
-}
-
-.choice-features {
-	display: flex;
-	flex-direction: column;
-	margin-left: -40px;
 }
 
 /* Конец страницы каталога, боковая панель "СЕТКА, ОСОБЕННОСТИ" */
 
 /* Начало панели "СТОИМОСТЬ, СОРТИРОВАТЬ" */
 
-
-
-.main-setting .main-setting-item {
+.main-setting {
 	list-style-type: none;
-	
+	margin: 0;
+	padding: 0;
 }
 
-.setting .setting-item {
+.setting {
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
+
 
 .choice-selection-item {
 	opacity: 0.12;
@@ -413,6 +412,8 @@ a {
 .choice-selection-main {
 	display: flex;
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -424,6 +425,8 @@ a {
 	display: flex;
 	list-style-type: none;
 	justify-content: center;
+	margin: 0;
+	padding: 0;
 }
 
 .pagination .pagination-item {
@@ -461,12 +464,16 @@ a {
 	width: 360px;
 }
 
-.container-main-2 {
+.choice-1 {
 	max-width: 760px;
+	display: inline-block;
 }
 
 .choice-selection-main {
+	display: flex;
 	display: inline-block;
+	padding: 0;
+	margin: 0;
 }
 
 
