@@ -370,9 +370,12 @@ a {
 /* Конец страницы каталога, боковая панель "СЕТКА, ОСОБЕННОСТИ" */
 
 /* Начало панели "СТОИМОСТЬ, СОРТИРОВАТЬ" */
+
+
+
 .main-setting .main-setting-item {
 	list-style-type: none;
-	width: 400px;
+	
 }
 
 .setting .setting-item {
@@ -396,24 +399,20 @@ a {
 .sort {
 	display: flex;
 	justify-content: space-around;
-	list-style-type: none;
 }
 .setting-item {
 	display: flex;
 	display: inline-block;
 	list-style-type: none;
+	justify-content: flex-end;
+	margin-right: 20px;
 }
 /* Конец панели "СТОИМОСТЬ, СОРТИРОВАТЬ" */
 
 /* НАЧАЛО КАТАЛОГА КАРТИНКИ */
 .choice-selection-main {
 	display: flex;
-	max-width: 1160px;
 	list-style-type: none;
-}
-
-.chouce-1 {
-	
 }
 
 
@@ -451,6 +450,26 @@ a {
 .pagination .pagination-item:active {
 	background-color: #d5d5d5;
 }
+
+/* ОГРОМНЫЕ БЛОКИ */
+
+.container-main {
+	display: flex;
+}
+
+.container-main-1 {
+	width: 360px;
+}
+
+.container-main-2 {
+	max-width: 760px;
+}
+
+.choice-selection-main {
+	display: inline-block;
+}
+
+
 
 /* КОНЕЦ ПЕРЕКЛЮЧАТЕЛЕЙ КАТАЛОГА КАРТИНКИ */
 
