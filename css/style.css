@@ -2,15 +2,18 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 24px;
+	font-size: 16px;
+	font-weight: normal;
 	min-width: 1200px;
 }
 
+/* ОФОРМЛЕНИЕ ВСЕХ ССЫЛОК */
 a {
 	text-decoration: none;
 	color: #000;
 }
+
+/* ОФОРМЛЕНИЕ ВСЕХ КНОПОК */
 
 .button {
 	font: inherit;
@@ -29,7 +32,13 @@ a {
 	background-color: #d7363b;
 }
 
-/* Начало шапки сайта */
+.button-message-1 {
+	width: 219px;
+	height: 50px;
+	border-radius: 3px;
+}
+
+/* НАЧАЛО ШАПКИ САЙТА */
 .main-logo:hover {
 	opacity: 0.8;
 }
@@ -53,13 +62,14 @@ a {
 .main-navigation-wrapper {
 	width: 100%;
 	min-height: 70px;
+	background-color: transparent;
 	margin-top: 50px;
 }
 
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .main-navigation-wrapper .container {
@@ -75,7 +85,6 @@ a {
 	list-style-type: none;
 	font-size: 16px;
 	font-weight: 500;
-	color: 000;
 	min-height: 70px;
 	margin: 0;
 	padding: 0;
@@ -115,17 +124,18 @@ a {
 	height: 287px;
 }
 
-.addition-2 {
-
+.button-up {
+	width: 240px;
+	height: 50px;
+	margin-top: 40px;
+	border-radius: 3px;
 }
 
-
-/* Корзина */
+/* КОРЗИНА В ШАПКЕ, ПРОДОЛЖЕНИЕ ШАПКИ САЙТА */
 .user-navigation {
 	list-style-type: none;
 	font-size: 16px;
 	font-weight: 500;
-	color: 000;
 }
 .user-navigation .main-basket a:hover {
 	color: #ff535d;
@@ -136,12 +146,9 @@ a {
 }
 
 
-/* Конец шапки сайта */
+/* КОНЕЦ ШАПКИ САЙТА */
 
-/* Начало feature-item */
-.features {
-
-}
+/* Начало feature-item на INDEX.HTML  */
 
 .feature-list {
 	list-style-type: none;
@@ -158,8 +165,18 @@ a {
 	width: 300px;
 }
 
+
+.feature-button-one {
+	width: 160px;
+	height: 50px;
+	border-radius: 3px;
+}
+
 .feature-button-two {
 	background-color: #00ca74;
+	width: 160px; 
+	height:50px;
+	border-radius: 3px;
 }
 
 .feature-button-two:hover {
@@ -172,6 +189,9 @@ a {
 
 .feature-button-three {
 	background-color: #efc84a;
+	width: 160px; 
+	height:50px;
+	border-radius: 3px;
 }
 
 .feature-button-three:hover {
@@ -181,11 +201,16 @@ a {
 .feature-button-three:active {
 	background-color: #e6a823;
 }
-/* Конец feature-item */
-/* Начало "Мы - маленькая, но гордая дизайн-студия" */
+/* Конец feature-item по INDEX.HTML */
+
+
+
+/* Начало "Мы - маленькая, но гордая дизайн-студия на INDEX.HTML" */
 
 .orders {
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .main-table .table-item {
@@ -214,16 +239,18 @@ a {
 	min-height: 420px;
 	width: 360px;
 }
-/* Конец "Мы - маленькая, но гордая дизайн-студия" */
+/* Конец "Мы - маленькая, но гордая дизайн-студия на INDEX.HTML" */
 
-/* Начало СПОНСОРОВ */
+/* Начало СПОНСОРОВ на INDEX.HTML */
 .main-brand {
 	list-style-type: none;
 	display: flex;
-	justify-content: space-between;
-	padding: 0 30px;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+	margin-top: 44px;
+	margin-bottom: 44px;
+	
 }
 
 .main-brand .main-brand-item {
@@ -237,61 +264,60 @@ a {
 .main-brand .main-brand-item:active {
 	opacity: 0.1;
 }
+/* Конец СПОНСОРОВ НА INDEX.HTML*/
 
-/* Конец СПОНСОРОВ */
-
-/* КАРТЫ */
+/* КАРТЫ НА ДВУХ СТРАНИЦАХ INDEX & CATALOG */
 .map-contact {
 	background-color:#FFE4E1;
 	width: 250px;
 	height: 250px;
 	text-align: center;
-	line-height: height;
-
-
 }
 
-/* Начало подвала сайта */
-.social-networks .social-networks-item {
+/* КОНЕЦ КАРТ */
+
+/* НАЧАЛО ПОДВАЛА САЙТА НА ДВУХ СТРАНИЦАХ INDEX & CATALOG */
+	.social-networks-item {
 	list-style-type: none;
 	border-radius: 50%;
 	background-color: #e1e1e1;
 	width: 78px;
 	height: 78px;
 	text-align: center;
-	line-height: 95px;
+	line-height: 85px;
 	vertical-align: middle;
+	margin-right: 20px;
 }
 
-.social-networks .social-networks-item:hover {
+.social-networks-item:hover {
 	background-color: #e74246;
 }
 
-.social-networks .social-networks-item:active {
+.social-networks-item:active {
 	background-color: #d7363b;
 }
 
 .page-footer {
 	display: flex;
+	margin: 0 auto;
+	justify-content: flex-start;
 	height: 220px;
+	max-width: 1160px;
 }
 
 .social-networks {
 	display: flex;
-	margin-left: 320px;
-	margin-right: 120px;
+	margin: 0;
+	padding: 0;
 	align-items: center;
-}
-
-.social-networks-item {
-	margin-right: 20px;
 }
 
 .discount {
 	padding-top: 80px;
+	margin-left: 140px;
 }
 
-/* Конец подвала сайта */
+/* КОНЕЦ ПОДВАЛА НА ДВУХ СТРАНИЦАХ INDEX & CATALOG */
 
 /* Главные надписи на сайте */
 .littering-1 {
@@ -316,9 +342,13 @@ a {
 	font-size: 16px;
 }
 
+.littering-6 {
+	margin-top: -29px;
+}
+
 /* Конец главных надписей на сайте */
 
-/* Страница каталога, боковая панель "СЕТКА, ОСОБЕННОСТИ" */
+/* Боковая панель "СЕТКА, ОСОБЕННОСТИ НА СТРАНИЦЕ CATALOG" */
 .visually-hidden {
 	height: 160px;
 	background-color: #eee;
@@ -333,7 +363,11 @@ a {
 	padding: 0;
 }
 
-.choice-features{
+.choice-grid-item {
+	line-height: 30px;
+}
+
+.choice-features {
 	display: flex;
 	flex-direction: column;
 	list-style-type: none;
@@ -341,9 +375,16 @@ a {
 	padding: 0;
 }
 
+.choice-features-item {
+	line-height: 30px;
+}
+
 .show-grid {
 	background-color: #eeeeee;
 	color: #000;
+	width: 260px;
+	height: 50px;
+	margin-top: 48px;
 }
 
 .show-grid:hover {
@@ -362,61 +403,91 @@ a {
 .choice-grid {
 	display: flex;
 	flex-direction: column;
+	margin: 0;
+	padding: 0;
 }
+
 
 /* Конец страницы каталога, боковая панель "СЕТКА, ОСОБЕННОСТИ" */
 
 /* Начало панели "СТОИМОСТЬ, СОРТИРОВАТЬ" */
-
-.main-setting {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.setting {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
-
-.choice-selection-item {
-	opacity: 0.12;
-}
-
-.choice-selection-item:hover {
-	opacity: 1;
-}
-
 .main-setting {
 	display: flex;
 	flex-direction: column;
-	margin-left: -40px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
+.main-sort {
+	display: flex;
+}
 .sort {
 	display: flex;
-	justify-content: space-around;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 50px;
+}
+
+.setting {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 200px;
 }
 .setting-item {
 	display: flex;
 	display: inline-block;
 	list-style-type: none;
-	justify-content: flex-end;
-	margin-right: 20px;
+	margin-right: 25px;
+}
+
+.down-up {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	margin-left: 15px;
+}
+
+.setting-item-two {
+	display: flex;
+	margin-left: 20px;
 }
 /* Конец панели "СТОИМОСТЬ, СОРТИРОВАТЬ" */
 
 /* НАЧАЛО КАТАЛОГА КАРТИНКИ */
 .choice-selection-main {
-	display: flex;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
+.container-main-main {
+	display: flex;
+	justify-content: space-around;
+}
 
+.choice-selection {
+	max-width: 760px;
+	margin-left: 60px;
+}
+
+.chouce-1 {
+	display: flex;
+	flex-wrap: wrap;
+	display: inline-block;
+	width: 360px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+.choice-selection-main img {
+	margin-top: -6px;
+}
 /* КОНЕЦ КАТАЛОГА КАРТИНКИ */
 
 /* НАЧАЛО ПЕРЕКЛЮЧАТЕЛЕЙ КАТАЛОГА КАРТИНКИ */
@@ -425,8 +496,7 @@ a {
 	display: flex;
 	list-style-type: none;
 	justify-content: center;
-	margin: 0;
-	padding: 0;
+	margin-left: 95px;
 }
 
 .pagination .pagination-item {
@@ -453,30 +523,6 @@ a {
 .pagination .pagination-item:active {
 	background-color: #d5d5d5;
 }
-
-/* ОГРОМНЫЕ БЛОКИ */
-
-.container-main {
-	display: flex;
-}
-
-.container-main-1 {
-	width: 360px;
-}
-
-.choice-1 {
-	max-width: 760px;
-	display: inline-block;
-}
-
-.choice-selection-main {
-	display: flex;
-	display: inline-block;
-	padding: 0;
-	margin: 0;
-}
-
-
 
 /* КОНЕЦ ПЕРЕКЛЮЧАТЕЛЕЙ КАТАЛОГА КАРТИНКИ */
 
