@@ -49,11 +49,12 @@ a {
 
 .main-header {
 	background-color: #eee;
-	min-height: 125px;
+	min-height: 135px;
+	margin: 0 auto;
 }
 
 .main-navigation {
-	min-height: 125px;
+	min-height: 135px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -64,6 +65,10 @@ a {
 	min-height: 70px;
 	background-color: transparent;
 	margin-top: 50px;
+}
+
+.main-navigation .container {
+	margin: 0;
 }
 
 .container {
@@ -80,12 +85,11 @@ a {
 .site-navigation {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	margin-right: 50px;
+	justify-content: space-around;
 	list-style-type: none;
 	font-size: 16px;
 	font-weight: 500;
-	min-height: 70px;
+	min-height: 60px;
 	margin: 0;
 	padding: 0;
 }
@@ -100,7 +104,7 @@ a {
 	min-height: 70px;
 	margin: 0;
 	padding: 0;
-	width: 100px;
+	width: 120px;
 }
 
 
@@ -124,6 +128,10 @@ a {
 	height: 287px;
 }
 
+.addition-2 {
+	margin-left: 50px;
+}
+
 .button-up {
 	width: 240px;
 	height: 50px;
@@ -145,10 +153,16 @@ a {
 	color: #bbb;
 }
 
+.basket-svvg {
+	padding-right: 26px;
+}
 
 /* КОНЕЦ ШАПКИ САЙТА */
 
 /* Начало feature-item на INDEX.HTML  */
+.features {
+	margin-bottom: 34px;
+}
 
 .feature-list {
 	list-style-type: none;
@@ -163,6 +177,7 @@ a {
 .feature-item {
 	min-height: 350px;
 	width: 300px;
+	margin-right: 100px;
 }
 
 
@@ -213,21 +228,38 @@ a {
 	padding: 0;
 }
 
+.orders-item {
+	margin-bottom: 36px;
+}
+
+.order-item-img {
+	vertical-align: middle;
+}
+
+.main-table {
+	width: 360px;
+	border-spacing: 5px 31px;
+}
+
 .main-table .table-item {
 	vertical-align: middle;
 	text-align: center;
 	font-size: 45px;
+	padding-right: 20px;
+	font-weight: bold;
+
 }
 
 .main-table .table-item-1 {
 	vertical-align: middle;
-	text-align: center;
+	padding-right: 5px;
 }
 
 .main-contacts {
-	padding: 0 40px;
+	padding: 0;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 80px;
 }
 
 .excellence {
@@ -238,6 +270,7 @@ a {
 .statistics {
 	min-height: 420px;
 	width: 360px;
+	margin-top: 38px;
 }
 /* Конец "Мы - маленькая, но гордая дизайн-студия на INDEX.HTML" */
 
@@ -269,12 +302,75 @@ a {
 /* КАРТЫ НА ДВУХ СТРАНИЦАХ INDEX & CATALOG */
 .map-contact {
 	background-color:#FFE4E1;
-	width: 250px;
-	height: 250px;
+	width: 320px;
+	height: 310px;
 	text-align: center;
 }
 
 /* КОНЕЦ КАРТ */
+
+.main-field-div-1-2 {
+	display: flex;
+	margin-left: 70px;
+}
+
+.field-div {
+	height: 35px;
+	width: 245px;
+	margin-top: 8px;
+}
+
+.field-div:hover {
+	border-color: #d7dcde;
+}
+
+.field-div:focus {
+	border-color: #000;
+}
+
+.field-div:invalid {
+	border-color: #e74246;
+	color: #e74246;
+}
+
+.field-div-1 {
+	margin-right: 30px;
+}
+
+.field-div-div {
+	margin-left: 70px;
+}
+
+.field-div-div-1 {
+	height: 82px;
+	width: 521px;
+	margin-top: 8px;
+}
+
+.field-div-div-1:hover {
+	border-color: #d7dcde;
+}
+
+.field-div-div-1:focus {
+	border-color: #000;
+}
+
+.field-div-div-1:invalid {
+	border-color: #e74246;
+	color: #e74246;
+}
+
+.main-button-form {
+	width: 180px;
+	height: 35px;
+	border-radius: 3px;
+	margin-left: 70px;
+	margin-top: 25px;
+}
+
+.map-contact-div-div {
+	padding-top: 56px;
+}
 
 /* НАЧАЛО ПОДВАЛА САЙТА НА ДВУХ СТРАНИЦАХ INDEX & CATALOG */
 	.social-networks-item {
@@ -326,6 +422,8 @@ a {
 
 .littering-2 {
 	font-size: 45px;
+	margin-top: 88px;
+	margin-bottom: 50px;
 }
 
 .littering-3 {
@@ -335,15 +433,25 @@ a {
 .littering-4 {
 	text-transform: uppercase;
 	font-size: 16px;
+	margin-top: 51px;
+	margin-bottom: 36px;
 }
 
 .littering-5 {
 	text-transform: uppercase;
 	font-size: 16px;
+	margin-top: 77px;
+	margin-bottom: 10px;
+	text-align: center;
 }
 
 .littering-6 {
 	margin-top: -29px;
+}
+
+.littering-7 {
+	margin-left: 70px;
+	margin-top: 52px;
 }
 
 /* Конец главных надписей на сайте */
@@ -385,6 +493,7 @@ a {
 	width: 260px;
 	height: 50px;
 	margin-top: 48px;
+
 }
 
 .show-grid:hover {
@@ -405,6 +514,16 @@ a {
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
+}
+
+#option1-1 {
+	transform: scale(2.1);
+	margin-right: 10px;
+}
+
+#option2-2 {
+	transform: scale(2.1);
+	margin-right: 15px;
 }
 
 
@@ -510,6 +629,7 @@ a {
 	width: 50px;
 	height: 50px;
 	margin: 5px;
+	border-radius: 3px;
 }
 .pagination :last-child {
 	width: 260px;
@@ -527,6 +647,9 @@ a {
 /* КОНЕЦ ПЕРЕКЛЮЧАТЕЛЕЙ КАТАЛОГА КАРТИНКИ */
 
 /* ФОРМЫ  */
-.main-form {
-	display: none;
+.message-form {
+	width: 667px;
+	height: 410px;
+	background-color: #fff;
+	display: flex;
 }

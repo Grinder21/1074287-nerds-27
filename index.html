@@ -22,7 +22,7 @@
       <li class="item-site-navigation"><a href="#"><b>КОНТАКТЫ</b></a></li>
       </ul>
       <ul class="user-navigation">
-       <li class="main-basket"><img src="img/svg-nerds/cart-icon.svg" width="15" height="15" alt="Картинка корзины"><a href="#"><b> КОРЗИНА</b></a></li>
+       <li class="main-basket"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class='basket-svvg'><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg><a href="#"><b> КОРЗИНА</b></a></li>
       </ul>  
       </div>
       </div>
@@ -77,19 +77,19 @@
       превыше креатива. Работаем не покладая рук, как роботы.
       <p class="littering-4"><b>Выполняем заказы на разработку:</b></p>
       <ul class="orders">
-        <li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка"> Веб-сайтов любой сложности</li>
-        <li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка"> Мобильных приложений для iOS и Android</li>
-        <li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка"> Слайдшоу и видео для корпоративных презентаций</li>
+        <li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка" class="order-item-img"> Веб-сайтов любой сложности</li>
+        <li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка" class="order-item-img"> Мобильных приложений для iOS и Android</li>
+        <li class="orders-item"><img src="img/layer.png" width="25" height="2" alt="Чёрточка списка" class="order-item-img"> Слайдшоу и видео для корпоративных презентаций</li>
       </ul>  
       </div>
       <div class="statistics">
       <img src="img/nerds-illustration.png" width="360" height="208" alt="Картинка Нёрдс">
-      <p class="littering-5"><b>C 2004 любим точность во всём:</b></p>
+      <p class="littering-5"><b>C 2004 года любим точность во всём:</b></p>
       <table class="main-table">
-        <tr>
-        <td class="table-item"><b>146%</b></td>
-        <td class="table-item"><b>100%</b></td>
-        <td class="table-item"><b>50%</b></td>  
+        <tr class="train-1">
+        <td class="table-item"><b>146<sup>%</sup></b></td>
+        <td class="table-item"><b>100<sup>%</sup></b></td>
+        <td class="table-item"><b>50<sup>%</sup></b></td>  
         </tr>
         <tr>
         <td class="table-item-1">Уровень самоотдачи</td>
@@ -111,27 +111,38 @@
       <!-- Вставить код карты !-->
       <img src="img/coord-map.jpg" width="1000" height="400" alt="Изображение на карте">
       <article class="map-contact">
-      <h5><b>NERDS DESIGN STUDIO</b></h5>
-      191186, Санкт-Петербург,<br>
-      ул. Б. Конюшенная, д. 19/8
-      <p>тел. +7 (812) 275-75-75</p>
-      <button type="button" class="button button-message-1">Напишите нам</button>
+        <div class="map-contact-div-div">
+         <h5><b>NERDS DESIGN STUDIO</b></h5>
+        191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8
+        <p>тел. +7 (812) 275-75-75</p>
+        <button type="button" class="button button-message-1">Напишите нам</button>  
+        </div>
       </article>
     </div>
     <img src="img/map-marker.png" width="231" height="190" alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург">
     <div class="message-form">
     <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-    <h2>Напишите нам</h2>
+    <h2 class="littering-7">Напишите нам</h2>
+    <div class="main-field-div-1-2">
+    <div class="field-div-1">
     <p>
     <label for="name-user"><b>Ваше имя:</b></label><br>
-    <input id="name-user" type="text" name="name" value="" placeholder="Имя Фамилия">
-    </p>
+    <input id="name-user" type="text" name="name" value="" placeholder="Имя Фамилия" class="field-div">
+    </p>  
+    </div>
+    <div class="field-div-2">
     <p>
     <label for="user-email"><b>Ваш e-mail</b></label><br>
-    <input id="user-email" type="email" name="login" placeholder="email@example.com">
-    </p><br>
-    <textarea name="comment" placeholder="В свободной форме"></textarea><br>
-    <button type="submit" class="button">Отправить</button>
+    <input id="user-email" type="email" name="login" placeholder="email@example.com" class="field-div">
+    </p>  
+    </div>
+    </div>
+    <div class="field-div-div">
+      <label for="main-comment"><b>Текст письма:</b></label><br>
+     <textarea name="comment" placeholder="В свободной форме" id="main-comment" class="field-div-div-1"></textarea><br>  
+    </div>
+    <button type="submit" class="button main-button-form">Отправить</button>
     </form> 
     </div>
     </main>
