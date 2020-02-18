@@ -27,6 +27,53 @@
       </div>
       </div>
     </nav>
+    <div class="slider">
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="slider-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
+    <div class="slides">
+      <div class="slide">
+        <div class="slide-text">
+           <div class="slide-title">Долго, дорого,<br>скрупулезно</div>
+           <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+           <a class="btn" href="#">Узнать больше</a>
+        </div>
+       </div>
+      <div class="slide">
+        <div class="slide-text">
+          <div class="slide-title">Любим математику,<br> как никто другой</div>
+          <p>Никакого креатива, только математические формулы<br>  для расчета идеальных пропорций.</p>
+          <a class="btn" href="#">Узнать больше</a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-text">
+          <div class="slide-title">Только ночь,<br> только хардкор!</div>
+          <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+          <a class="btn" href="#">Узнать больше</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!--
     <div class="addition">
     <div class="addition-1">
     <p class="littering-1"><b>Долго, дорого,<br>скрупулёзно.</b></p>
@@ -38,6 +85,7 @@
       <img src="img/slide1.png" width="698" height="413" alt="Картинка с телефонами"> 
     </div>
     </div>
+    !-->
     </header>
     <main class="container">
     <section class="features">
@@ -109,22 +157,23 @@
     <img src="img/divide.png" width="1160" height="2" alt="Горизонтальная линия">
     <div class="main-map">
       <!-- Вставить код карты !-->
-      <img src="img/coord-map.jpg" width="1000" height="400" alt="Изображение на карте">
+      <img src="img/map.PNG" width="1160" height="415" alt="Изображение на карте">
       <article class="map-contact">
         <div class="map-contact-div-div">
-         <h5><b>NERDS DESIGN STUDIO</b></h5>
-        191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8
+        <div class="littering-8"><b>NERDS DESIGN STUDIO</b></div>
+        <p>191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
         <button type="button" class="button button-message-1">Напишите нам</button>  
         </div>
       </article>
     </div>
     <img src="img/map-marker.png" width="231" height="190" alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург">
-    <div class="message-form">
+    <div class="modal modal-login">
     <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
     <h2 class="littering-7">Напишите нам</h2>
     <div class="main-field-div-1-2">
+      <button type="button" class="modal-close"></button>
     <div class="field-div-1">
     <p>
     <label for="name-user"><b>Ваше имя:</b></label><br>

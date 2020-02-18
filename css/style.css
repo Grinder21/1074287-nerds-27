@@ -3,9 +3,150 @@ body {
 	padding: 0;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: 400;
 	min-width: 1200px;
 }
+
+
+.main-header {
+  background: #eeeeee;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.slider {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+}
+.slide {
+  width: 100%;
+  min-height: 430px;
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+  transition: left 0.3s ease;
+}
+.slider input[type="radio"] {
+  display: none;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  z-index: 10;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center; 
+}
+.slider-controls label {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 3px;
+  vertical-align: top;
+  background: #ffffff;
+  border: 5px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slide-text {
+  width: 520px;
+  padding: 30px 0;
+}
+.slide-title {
+  font-weight: 700;
+  font-size: 55px;
+}
+.slide p {
+  font-weight: 500;
+  line-height: 22px;
+  color: #283136;
+}
+.slide .btn {
+  display: block;
+  width: 240px;
+  height: 30px;
+  margin-top: 46px;
+  padding: 12px 10px;
+  font-weight: 300;
+  font-size: 16px;
+  vertical-align: middle;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #fb565a;
+  border-radius: 3px;
+}
+.slide:nth-child(1) {
+  background-image: url(img/slide1.png); 
+}
+
+.slide:nth-child(2) {
+  background-image: url(img/slide2.png);
+}
+
+.slide:nth-child(3) {
+  background-image: url(img/slide3.png);
+}
+.slide {
+  display: none;
+}
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #c1c1c1;
+}
+/* КОНЕЦ СЛАЙДЕРА */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ОФОРМЛЕНИЕ ВСЕХ ССЫЛОК */
 a {
@@ -36,6 +177,7 @@ a {
 	width: 219px;
 	height: 50px;
 	border-radius: 3px;
+	margin-top: 24px;
 }
 
 /* НАЧАЛО ШАПКИ САЙТА */
@@ -301,10 +443,9 @@ a {
 
 /* КАРТЫ НА ДВУХ СТРАНИЦАХ INDEX & CATALOG */
 .map-contact {
-	background-color:#FFE4E1;
+	background-color:#fff;
 	width: 320px;
 	height: 310px;
-	text-align: center;
 }
 
 /* КОНЕЦ КАРТ */
@@ -312,6 +453,36 @@ a {
 .main-field-div-1-2 {
 	display: flex;
 	margin-left: 70px;
+}
+
+.modal-close {
+  position: absolute;
+  left: 590px;
+  top: 55px;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  top: 10px;
+  left: 2px;
+  position: absolute;
+  width: 19px;
+  height: 3px;
+  background-color: red;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 
 .field-div {
@@ -369,7 +540,8 @@ a {
 }
 
 .map-contact-div-div {
-	padding-top: 56px;
+	padding-top: 58px;
+	margin-left: 50px;
 }
 
 /* НАЧАЛО ПОДВАЛА САЙТА НА ДВУХ СТРАНИЦАХ INDEX & CATALOG */
@@ -454,7 +626,125 @@ a {
 	margin-top: 52px;
 }
 
+.littering-8 {
+	font-size: 18px;
+	margin-bottom: 34px;
+}
+
+.littering-9 {
+	font-size: 18px;
+  	line-height: 24px;
+  	text-transform: uppercase;
+  	font-weight: 700;
+}
+
 /* Конец главных надписей на сайте */
+
+/* ФИЛЬТР */
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  /* Для демонстрации */
+  width: 260px;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  background-color: #f1f1f1;
+  
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
+
 
 /* Боковая панель "СЕТКА, ОСОБЕННОСТИ НА СТРАНИЦЕ CATALOG" */
 .visually-hidden {
@@ -562,6 +852,15 @@ a {
 	display: inline-block;
 	list-style-type: none;
 	margin-right: 25px;
+	opacity: 0.2;
+}
+
+.setting-item:hover {
+	opacity: 0.6;
+}
+
+.setting-item:active {
+	opacity: 1;
 }
 
 .down-up {
@@ -607,6 +906,26 @@ a {
 .choice-selection-main img {
 	margin-top: -6px;
 }
+
+.chouce-1-item {
+	opacity: 0.12;
+}
+
+.chouce-1-item:hover {
+	opacity: 1;
+}
+
+.down-up-icon {
+	opacity: 0.2;
+}
+
+.down-up-icon:hover {
+	opacity: 0.6;
+}
+
+.down-up-icon:active {
+	opacity: 1;
+}
 /* КОНЕЦ КАТАЛОГА КАРТИНКИ */
 
 /* НАЧАЛО ПЕРЕКЛЮЧАТЕЛЕЙ КАТАЛОГА КАРТИНКИ */
@@ -647,9 +966,16 @@ a {
 /* КОНЕЦ ПЕРЕКЛЮЧАТЕЛЕЙ КАТАЛОГА КАРТИНКИ */
 
 /* ФОРМЫ  */
-.message-form {
-	width: 667px;
-	height: 410px;
+.modal {
+	position: fixed;
 	background-color: #fff;
-	display: flex;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+.modal-login {
+	top: 360px;
+    left: 30%;
+    width: 667px;
+	height: 410px;
 }
