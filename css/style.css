@@ -905,20 +905,12 @@ a {
   background-color: #4d4d4d;
 }
 
-
-.notification {
-	width: 360px;
-	height: 233px;
-	background-color: #eeeeee;
-	margin-bottom: 20px;
-}
-
 .notification-main {
 	font-size: 18px;
 	font-weight: 700;
 	text-align: center;
-	margin-bottom: 28px;
-	padding-top: 34px;
+	margin-bottom: 20px;
+	padding-top: 20px;
 	text-transform: uppercase;
 }
 
@@ -926,7 +918,7 @@ a {
 	font-size: 16px;
 	font-weight: normal;
 	text-align: center;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	color: #8a8a8a;
 }
 
@@ -935,6 +927,107 @@ a {
 	height: 50px;
 	margin-left: 80px;
 	border-radius: 3px;
+}
+
+.notification-1 {
+position:absolute;
+top: 850px;
+left:752px;
+bottom:0;
+right:0;
+display:none;
+width: 360px;
+height: 233px;
+background-color: #eeeeee;
+margin-bottom: 20px;
+}
+.chouce-1:hover .notification-1{
+display:block;
+}
+
+.notification-2 {
+	position:absolute;
+	top: 850px;
+	left:1152px;
+	bottom:0;
+	right:0;
+	display:none;
+	width: 360px;
+	height: 233px;
+	background-color: #eeeeee;
+	margin-bottom: 20px;
+}
+
+.chouce-2:hover .notification-2{
+display:block;
+}
+
+.notification-3 {
+	position:absolute;
+	top: 1508px;
+	left:752px;
+	bottom:0;
+	right:0;
+	display:none;
+	width: 360px;
+	height: 233px;
+	background-color: #eeeeee;
+	margin-bottom: 20px;
+}
+
+.chouce-3:hover .notification-3{
+display:block;
+}
+
+.notification-4 {
+	position:absolute;
+	top: 1508px;
+	left:1152px;
+	bottom:0;
+	right:0;
+	display:none;
+	width: 360px;
+	height: 233px;
+	background-color: #eeeeee;
+	margin-bottom: 20px;
+}
+
+.chouce-4:hover .notification-4{
+display:block;
+}
+
+.notification-5 {
+	position:absolute;
+	top: 2166px;
+	left:752px;
+	bottom:0;
+	right:0;
+	display:none;
+	width: 360px;
+	height: 233px;
+	background-color: #eeeeee;
+	margin-bottom: 20px;
+}
+
+.chouce-5:hover .notification-5{
+display:block;
+}
+
+.notification-6 {
+	position:absolute;
+	top: 2166px;
+	left:1152px;
+	bottom:0;
+	right:0;
+	display:none;
+	width: 360px;
+	height: 233px;
+	background-color: #eeeeee;
+	margin-bottom: 20px;
+}
+
+.chouce-6:hover .notification-6{
+display:block;
 }
 /* Конец страницы каталога, боковая панель "СЕТКА, ОСОБЕННОСТИ" */
 
@@ -1024,8 +1117,47 @@ a {
 	flex-wrap: wrap;
 	display: inline-block;
 	width: 360px;
-	margin-bottom: 5px;
-	margin-left: 5px;
+	margin-bottom: 40px;
+}
+
+.chouce-2 {
+	display: flex;
+	flex-wrap: wrap;
+	display: inline-block;
+	width: 360px;
+	margin-bottom: 40px;
+}
+
+.chouce-3 {
+	display: flex;
+	flex-wrap: wrap;
+	display: inline-block;
+	width: 360px;
+	margin-bottom: 40px;
+}
+
+.chouce-4 {
+	display: flex;
+	flex-wrap: wrap;
+	display: inline-block;
+	width: 360px;
+	margin-bottom: 40px;
+}
+
+.chouce-5 {
+	display: flex;
+	flex-wrap: wrap;
+	display: inline-block;
+	width: 360px;
+	margin-bottom: 40px;
+}
+
+.chouce-6 {
+	display: flex;
+	flex-wrap: wrap;
+	display: inline-block;
+	width: 360px;
+	margin-bottom: 40px;
 }
 
 .choice-selection-main img {
@@ -1051,6 +1183,8 @@ a {
 .down-up-icon:active {
 	opacity: 1;
 }
+
+
 /* КОНЕЦ КАТАЛОГА КАРТИНКИ */
 
 /* НАЧАЛО ПЕРЕКЛЮЧАТЕЛЕЙ КАТАЛОГА КАРТИНКИ */
@@ -1059,7 +1193,6 @@ a {
 	display: flex;
 	list-style-type: none;
 	justify-content: center;
-	margin-left: 10px;
 }
 
 .pagination .pagination-item {
