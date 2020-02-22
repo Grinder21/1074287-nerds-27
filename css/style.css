@@ -5,6 +5,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	min-width: 1200px;
+	overflow-x: hidden; 
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -198,7 +199,7 @@ a {
 }
 
 .main-navigation-wrapper {
-	width: 100%;
+	width: auto;
 	min-height: 70px;
 	background-color: transparent;
 	margin-top: 50px;
@@ -212,6 +213,13 @@ a {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
+}
+
+.container-1 {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0;
+	height: 0;
 }
 
 .main-navigation-wrapper .container {
@@ -398,12 +406,8 @@ a {
 	margin: 0;
 	padding: 0;
 	margin-top: 44px;
-	margin-bottom: 44px;
-	
-}
-
-.main-brand-item .main-brand-item-3 {
-	padding-top: 20px;
+	margin-bottom: 40px;
+	align-items: center;
 }
 
 .main-brand .main-brand-item {
@@ -625,6 +629,7 @@ a {
 	flex-wrap: wrap;
 	justify-content: center;
 	min-height: 200px;
+	width: auto;
 }
 
 .littering-10-text {
@@ -941,17 +946,19 @@ margin-top: 80px;
 height: 430px;
 }
 
+.main-map-1 {
+	margin-top: 80px;
+	height: 430px;
+}
+
 .notification-1 {
 position:absolute;
-top: 850px;
-left:752px;
 bottom:0;
 right:0;
 display:none;
 width: 360px;
 height: 233px;
 background-color: #eeeeee;
-margin-bottom: 20px;
 }
 .choice-1:hover .notification-1{
 display:block;
@@ -959,15 +966,12 @@ display:block;
 
 .notification-2 {
 position:absolute;
-top: 850px;
-left:1152px;
 bottom:0;
 right:0;
 display:none;
 width: 360px;
 height: 233px;
 background-color: #eeeeee;
-margin-bottom: 20px;
 }
 
 .choice-2:hover .notification-2{
@@ -976,15 +980,12 @@ display:block;
 
 .notification-3 {
 position:absolute;
-top: 1508px;
-left:752px;
 bottom:0;
 right:0;
 display:none;
 width: 360px;
 height: 233px;
 background-color: #eeeeee;
-margin-bottom: 20px;
 }
 
 .choice-3:hover .notification-3{
@@ -993,15 +994,12 @@ display:block;
 
 .notification-4 {
 position:absolute;
-top: 1508px;
-left:1152px;
 bottom:0;
 right:0;
 display:none;
 width: 360px;
 height: 233px;
 background-color: #eeeeee;
-margin-bottom: 20px;
 }
 
 .choice-4:hover .notification-4{
@@ -1010,15 +1008,12 @@ display:block;
 
 .notification-5 {
 position:absolute;
-top: 2166px;
-left:752px;
 bottom:0;
 right:0;
 display:none;
 width: 360px;
 height: 233px;
 background-color: #eeeeee;
-margin-bottom: 20px;
 }
 
 .choice-5:hover .notification-5{
@@ -1027,15 +1022,12 @@ display:block;
 
 .notification-6 {
 position:absolute;
-top: 2166px;
-left:1152px;
 bottom:0;
 right:0;
 display:none;
 width: 360px;
 height: 233px;
 background-color: #eeeeee;
-margin-bottom: 20px;
 }
 
 .choice-6:hover .notification-6{
@@ -1121,6 +1113,7 @@ margin-left: 60px;
 }
 
 .choice-1 {
+position: relative;
 display: flex;
 flex-wrap: wrap;
 display: inline-block;
@@ -1129,6 +1122,7 @@ margin-bottom: 40px;
 }
 
 .choice-2 {
+position: relative;
 display: flex;
 flex-wrap: wrap;
 display: inline-block;
@@ -1137,6 +1131,7 @@ margin-bottom: 40px;
 }
 
 .choice-3 {
+position: relative;
 display: flex;
 flex-wrap: wrap;
 display: inline-block;
@@ -1145,6 +1140,7 @@ margin-bottom: 40px;
 }
 
 .choice-4 {
+position: relative;
 display: flex;
 flex-wrap: wrap;
 display: inline-block;
@@ -1153,6 +1149,7 @@ margin-bottom: 40px;
 }
 
 .choice-5 {
+position: relative;
 display: flex;
 flex-wrap: wrap;
 display: inline-block;
@@ -1161,6 +1158,7 @@ margin-bottom: 40px;
 }
 
 .choice-6 {
+position: relative;
 display: flex;
 flex-wrap: wrap;
 display: inline-block;
@@ -1226,16 +1224,22 @@ background-color: #d5d5d5;
 
 .modal {
 position: fixed;
+top: 50%;
+left: 50%;
+z-index: 100;
+transform: translate(-50%, -50%);
 background-color: #fff;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
 }
 
 .modal-login {
+
 top: 360px;
-left: 30%;
 width: 667px;
 height: 410px;
 display: none;
+box-shadow: 0 20px 40px 0 rgba(0,1,1,.75);
+background-color: #fff;
 }
 
 .bar {
