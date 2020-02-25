@@ -32,6 +32,11 @@ input[type="radio"].visually-hidden {
   margin-left: 20px;
 }
 
+.link-navigation {
+	border-bottom: 2px solid #fb565a;
+	padding-bottom: 7px;
+}
+
 .slider {
   position: relative;
   width: 1160px;
@@ -40,7 +45,7 @@ input[type="radio"].visually-hidden {
 
 .slide {
   width: 100%;
-  min-height: 430px;
+  min-height: 420px;
   background-repeat: no-repeat;
   background-position: 100% 10px;
   transition: left 0.3s ease;
@@ -241,6 +246,11 @@ a {
 
 .item-site-navigation {
 	margin-right: 45px;
+}
+
+.item-site-navigation a:active {
+	text-decoration: underline;
+	color: red;
 }
 
 .user-navigation {
@@ -474,6 +484,8 @@ a {
 	height: 35px;
 	width: 245px;
 	margin-top: 8px;
+	border-radius: 3px;
+	outline: none;
 }
 
 .field-div:hover {
@@ -501,6 +513,8 @@ a {
 	height: 82px;
 	width: 521px;
 	margin-top: 8px;
+	border-radius: 3px;
+	outline: none;
 }
 
 .field-div-div-1:hover {
@@ -924,6 +938,14 @@ text-align: center;
 margin-bottom: 20px;
 padding-top: 20px;
 text-transform: uppercase;
+}
+
+.notification-main:hover {
+	color: #fb565a;
+}
+
+.notification-main:active {
+	color: #b2b2b2;
 }
 
 .notification-main-main {
