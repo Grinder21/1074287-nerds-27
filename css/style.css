@@ -289,7 +289,7 @@ a {
 	color: #bbb;
 }
 
-.basket-svvg {
+.basket-svg {
 	padding-right: 26px;
 }
 
@@ -317,6 +317,8 @@ a {
 	width: 160px;
 	height: 50px;
 	border-radius: 3px;
+	margin-top: 20px;
+	text-transform: uppercase;
 }
 
 .feature-button-two {
@@ -324,6 +326,8 @@ a {
 	width: 160px; 
 	height:50px;
 	border-radius: 3px;
+	margin-top: 20px;
+	text-transform: uppercase;
 }
 
 .feature-button-two:hover {
@@ -339,6 +343,8 @@ a {
 	width: 160px; 
 	height:50px;
 	border-radius: 3px;
+	margin-top: 20px;
+	text-transform: uppercase;
 }
 
 .feature-button-three:hover {
@@ -442,6 +448,7 @@ a {
 .main-field-div-1-2 {
 	display: flex;
 	margin-left: 70px;
+	margin-right: 40px;
 }
 
 .modal-show {
@@ -478,6 +485,10 @@ a {
   	transform: rotate(-45deg);
 }
 
+.feature-item-littering {
+	margin-bottom: 0.2em;
+}
+
 .field-div {
 	height: 35px;
 	width: 245px;
@@ -497,10 +508,6 @@ a {
 .field-div:invalid {
 	border-color: #e74246;
 	color: #e74246;
-}
-
-.field-div-1 {
-	margin-right: 30px;
 }
 
 .field-div-div {
@@ -594,7 +601,18 @@ a {
 .littering-2 {
 	font-size: 45px;
 	margin-top: 80px;
+	margin-bottom: 0.1em;
+	
+}
+
+.littering-12 {
+	font-size: 45px;
 	margin-bottom: 47px;
+}
+
+.littering-13 {
+	margin-top: 36px;
+	margin-bottom: 0.5em;
 }
 
 .littering-3 {
@@ -647,6 +665,10 @@ a {
 .littering-10-text {
 	font-size: 55px;
 	font-weight: 700;
+}
+
+.google-map {
+	width: 100%;
 }
 
 .filter-item {
@@ -940,8 +962,17 @@ a {
 	font-size: 16px;
 	font-weight: normal;
 	text-align: center;
-	padding-bottom: 10px;
 	color: #8a8a8a;
+	margin-bottom: 0.1em;
+}
+
+.notification-main-main-2 {
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	margin: 0 auto;
+	color: #8a8a8a;
+	padding-bottom: 20px;
 }
 
 .notification-button {
