@@ -1,9 +1,9 @@
-var button1 = document.querySelector(".login-button"); // тут кнопка
-var popup = document.querySelector(".modal-login"); // тут форма
-var close = popup.querySelector('.modal-close'); // кнопка закрытия
+var button1 = document.querySelector(".login-button"); 
+var popup = document.querySelector(".modal-login");
+var close = popup.querySelector('.modal-close'); 
 var form = popup.querySelector('form');
-var name = popup.querySelector('[name=name]'); // поле "имя"
-var mail = popup.querySelector('[name=login]'); // почта
+var name = popup.querySelector('[name=name]');
+var mail = popup.querySelector('[name=login]'); 
 var isStorageSupport = true;
 var storage = '';
 
