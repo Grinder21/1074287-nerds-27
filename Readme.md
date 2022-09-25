@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Михаил Ефремов](https://up.htmlacademy.ru/htmlcss/27/user/1074287).
-* Наставник: [Кислый Михон](https://htmlacademy.ru/profile/smart-grizzly).
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
